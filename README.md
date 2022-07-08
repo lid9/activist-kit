@@ -1,4 +1,4 @@
-# activist-kit
+# Activist Toolkit Project
 
 Website for the GWC Summer Immersion Program.
 
