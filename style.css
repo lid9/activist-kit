@@ -1,0 +1,326 @@
+/* STYLE SECTIONING TAGS */
+* { /* Reset the space of the webpage */
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #F7FFF6;
+  text-align: center;
+  line-height: 1.6;
+}
+
+main {
+  background-color: #DAFFD6;
+  padding: 2em;
+}
+
+.background-image { /* CHANGE HOME PAGE BG */
+  background-image: url("assets/protest-blurred.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+/* STYLE TEXT */
+
+h1, h2, h3 {
+  color: #1a6ef4;
+  line-height: 1.2;
+}
+
+h1 {
+  color: #345995;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 102px;
+  padding-top: 10rem;
+}
+
+h2 {
+  font-size: 51px;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-style: italic;
+  margin: 20px;
+}
+
+h3 {
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 25px;
+
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+p, .resources li {
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 24px;
+  color: #113774;
+  
+  padding: 6px;
+  margin: 1em 15% 2rem 15%;
+}
+
+a {
+  color: #1a6ef4;
+}
+
+.subtitle {
+  font-size: 14px;
+}
+
+.all {
+  font-size: 204px;
+  color: #1a6ef4;
+}
+
+.resources {
+  margin: 5% 10%;
+}
+
+#fact {
+  font-size: 2rem;
+  color: #1a6ef4;
+}
+
+/* STYLE IMAGES */
+
+img {
+  width: 100%;
+  border-radius: 6px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  margin: 66px 5% 166px 5%;
+}
+
+.flex-item {
+  flex-basis: 100%;
+  margin: 1%;
+}
+
+.graphic {
+  width: 20rem;
+}
+
+/* CHANGE CSS BASED ON SCREEN SIZE */
+/* Breakpoint 1 */
+
+@media screen and (max-width: 850px) {
+
+  .flex-container {
+    flex-wrap: wrap;
+  }
+
+  header {
+   padding: 0 10%;
+  }
+
+  h1 {
+    margin-top: 3rem;
+  }
+
+  h2 {
+    margin: 0 15%;
+  }
+
+  p {
+    margin: 0 4%;
+  }
+
+  .btnContext {
+    margin: 1%;
+  }
+
+  #fact {
+    font-size: 1.25rem;
+    margin: 0 2%;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .flex-container {
+    margin: 0 2%;
+  }
+
+  h2 {
+    margin: 0 10%;
+  }
+
+  #fact {
+    font-size: 1.75rem;
+  }
+
+  .resources li {
+    margin: 0 8%;
+  }
+
+}
+
+
+
+/* STYLE NAV BAR */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+}
+
+.logo img {
+  width: 170px;
+  transition: opacity .6s ease-in;
+}
+
+.logo img:hover {
+  opacity: .75;
+}
+
+ul.nav-bar {
+  list-style-type: none;
+  overflow: hidden;
+
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 10px 5px rgba(147, 180, 139, 0.10);
+}
+
+li.nav-item {
+  display: inline;
+  float: right;
+  padding: 14px 50px;
+}
+
+li.nav-item a {
+  font-size: 22px;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  color: #345995;
+  text-decoration: none;
+  text-transform: uppercase;
+  
+  margin: 14px 16px;
+}
+
+li.nav-item a:hover {
+  color: #1a6ef4;
+  border-bottom: 4px solid #1a6ef4;
+}
+
+
+/* STYLE BUTTONS */
+
+.act-now {
+  background-color: white;
+  width: 266px;
+  border-radius: 50px;
+  border: 5px solid #1a6ef4;
+
+  padding: 8px;
+  margin: 1em auto 56px auto;
+
+  text-decoration: none;
+  color: #1a6ef4;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 34px;
+
+  transition: color .6s ease-in-out;
+}
+
+.act-now:hover {
+  background-color: #1a6ef4;
+  cursor: pointer;
+  color: white; 
+}
+
+
+/* STYLE FACT GENERATOR KEY FEATURE */
+
+.genFact {
+  border: 5px solid #345995;
+  border-image: linear-gradient(#345995, #1a6ef4) 30;
+
+  min-width: 50%;
+  margin: 0 20%;
+}
+
+#factBtn {
+  background-color: #345995;
+  border: 5px solid #345995;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+  padding: 1rem 2rem;
+  margin: 0 2em;
+
+  transition: background-color .25s ease-out, border-color .25s ease-out;
+}
+
+#factBtn:hover {
+  background-color: #1a6ef4;
+  border: 5px solid #1a6ef4;
+}
+
+
+/* STYLE PERSONALIZE IT KEY FEATURE  */
+
+.scriptQues {
+  background-color: #BCEBCB;
+  border-radius: 10px;
+  font-family: "Roboto", Helvetica, sans-serif;
+  color: #345995;
+  font-size: 1.25rem;
+  
+  margin: 5% 15% 0px 15%;
+}
+
+.scriptItem {
+  margin: 10px 10px 10px 15px;
+  padding: 20px 20px 0px 30px;
+
+  text-align: left;
+}
+
+input {
+  border-radius: 2px;
+  width: 60%;
+  border-style: none;
+}
+
+#scriptReturned {
+  margin: 5% 15% 0px 15%;
+  color: #345995;
+}
+
+#scriptBtn {
+  background-color: #345995;
+  border: 5px solid #345995;
+  cursor: pointer;
+  border-radius: 6px;
+  color: white;
+  font-family: "PT Sans", Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+  padding: .5rem 1rem;
+  margin: 1em 2em;
+
+  transition: background-color .25s ease-out, border-color .25s ease-out;
+}
+
+#scriptBtn:hover {
+  background-color: #1a6ef4;
+  border: 5px solid #1a6ef4;
+}
